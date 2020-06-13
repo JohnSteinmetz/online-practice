@@ -14,10 +14,6 @@ class TestTwoSum:
     def test_for_unique_positive_numbers(self):
         assert(two_sum(nums=[1, 2, 3, 4, 5], target=9) == [3, 4])
     
-    def test_for_unique_indices(self):
-        assert(two_sum(nums=[3, 3, 3, 3], target=6) != [0, 0])
-        assert(two_sum(nums=[3, 3, 3, 3], target=6) == [0, 1])
-
     def test_negative_numbers(self):
         assert(two_sum(nums=[-1, 2, 4], target=1) == [0, 1])
         assert(two_sum(nums=[-2, 3, -4], target=-6) == [0, 2])
