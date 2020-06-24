@@ -10,3 +10,6 @@ class TestSearchPosition:
 
     def test_value_in_list(self):
         assert(Solution.searchInsert(self, nums = [1, 3, 5, 6], target = 3) == 1)
+
+    def test_value_not_in_list(self):
+        assert(Solution.searchInsert(self, nums = [1, 2, 5, 6], target = 3) == 2)
